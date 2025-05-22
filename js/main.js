@@ -1,60 +1,93 @@
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize headline animations
-    initializeHeadlineEffects();
+    // Create a single IntersectionObserver for all animations
+    const animationObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const target = entry.target;
+                const animationType = target.dataset.animation;
+                
+                if (animationType === 'headline') {
+                    initializeHeadlineEffects();
+                } else if (animationType === 'letter') {
+                    initializeLetterShootingAnimation();
+                } else if (animationType === 'service-cards') {
+                    initializeServiceCards();
+                }
+                
+                // Unobserve after triggering the animation
+                animationObserver.unobserve(target);
+            }
+        });
+    }, { threshold: 0.2 });
     
-    // Initialize letter shooting animation
-    initializeLetterShootingAnimation();
+    // Observe elements that need animations
+    const headlineSection = document.querySelector('.headline-container');
+    const nameElement = document.getElementById('animated-name');
+    const serviceSection = document.getElementById('services');
     
-    // Initialize service cards animations and interactions
-    initializeServiceCards();
+    if (headlineSection) {
+        headlineSection.dataset.animation = 'headline';
+        animationObserver.observe(headlineSection);
+    }
+    
+    if (nameElement) {
+        nameElement.dataset.animation = 'letter';
+        animationObserver.observe(nameElement);
+    }
+    
+    if (serviceSection) {
+        serviceSection.dataset.animation = 'service-cards';
+        animationObserver.observe(serviceSection);
+    }
     
     // Typing effect for the hero section with SEO-focused phrases
     const typingText = document.getElementById('typing-text');
-    const phrases = [
-        'Building SEO-optimized frontends with powerful backends.',
-        'Turning ideas into interactive & accessible experiences.',
-        'Creating responsive websites with modern frameworks.',
-        'Solving complex problems with clean, semantic code.',
-        'Specializing in TailwindCSS, React & JavaScript.',
-        'Optimizing websites for speed, SEO & conversions.'
-    ];
-    
-    let phraseIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-    let typingSpeed = 100;
-    
-    function typeEffect() {
-        const currentPhrase = phrases[phraseIndex];
+    if (typingText) {
+        const phrases = [
+            'Building SEO-optimized frontends with powerful backends.',
+            'Turning ideas into interactive & accessible experiences.',
+            'Creating responsive websites with modern frameworks.',
+            'Solving complex problems with clean, semantic code.',
+            'Specializing in TailwindCSS, React & JavaScript.',
+            'Optimizing websites for speed, SEO & conversions.'
+        ];
         
-        if (isDeleting) {
-            typingText.textContent = currentPhrase.substring(0, charIndex - 1);
-            charIndex--;
-            typingSpeed = 50;
-        } else {
-            typingText.textContent = currentPhrase.substring(0, charIndex + 1);
-            charIndex++;
-            typingSpeed = 100;
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typingSpeed = 100;
+        
+        function typeEffect() {
+            if (!typingText) return; // Safety check
+            
+            const currentPhrase = phrases[phraseIndex];
+            
+            if (isDeleting) {
+                typingText.textContent = currentPhrase.substring(0, charIndex - 1);
+                charIndex--;
+                typingSpeed = 50;
+            } else {
+                typingText.textContent = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
+                typingSpeed = 100;
+            }
+            
+            if (!isDeleting && charIndex === currentPhrase.length) {
+                isDeleting = true;
+                typingSpeed = 1500; // Pause at the end
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                typingSpeed = 500; // Pause before typing next phrase
+            }
+            
+            setTimeout(typeEffect, typingSpeed);
         }
         
-        if (!isDeleting && charIndex === currentPhrase.length) {
-            isDeleting = true;
-            typingSpeed = 1500; // Pause at the end
-        } else if (isDeleting && charIndex === 0) {
-            isDeleting = false;
-            phraseIndex = (phraseIndex + 1) % phrases.length;
-            typingSpeed = 500; // Pause before typing next phrase
-        }
-        
-        setTimeout(typeEffect, typingSpeed);
+        // Start the typing effect
+        setTimeout(typeEffect, 1000);
     }
-    
-    // Start the typing effect
-    setTimeout(typeEffect, 1000);
-    
-    // Initialize service cards animations and interactions
-    initializeServiceCards();
     
     // Initialize headline animations and effects
     function initializeHeadlineEffects() {
