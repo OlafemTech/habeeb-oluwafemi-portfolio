@@ -1,0 +1,8 @@
+PLACEHOLDER INSTRUCTIONS
+
+To replace the placeholder images with actual website screenshots:
+
+1. Take screenshots of the ANAYD website (www.anayd.org) and save as "anayd-homepage.jpg" in this folder
+2. Take screenshots of the NYAN website (www.nyan.org.ng) and save as "nyan-homepage.jpg" in this folder
+
+The recommended dimensions are 1000x640 pixels for optimal display in the project cards.

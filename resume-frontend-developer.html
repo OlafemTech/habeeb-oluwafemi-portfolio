@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habeeb Oluwafemi Najeeb - Frontend Developer & SEO Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .resume-container {
+            max-width: 1000px;
+        }
+        .section-title {
+            position: relative;
+        }
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: #3B82F6;
+        }
+        @media print {
+            .no-print {
+                display: none;
+            }
+            body {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+            .resume-container {
+                max-width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="fixed top-4 right-4 z-50 no-print">
+        <button onclick="window.print()" class="bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-700 transition-colors flex items-center">
+            <i class="fas fa-print mr-2"></i> Print Resume
+        </button>
+    </div>
+
+    <div class="resume-container mx-auto my-8 bg-white shadow-xl rounded-lg overflow-hidden">
+        <!-- Header Section -->
+        <header class="bg-gray-900 text-white p-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+                <div>
+                    <h1 class="text-3xl font-bold">HABEEB OLUWAFEMI NAJEEB</h1>
+                    <h2 class="text-xl text-blue-400 mt-2">Frontend Developer & SEO Specialist</h2>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <a href="https://github.com/OlafemTech" target="_blank" rel="noopener" class="text-blue-300 hover:text-blue-200 transition-colors">
+                        <i class="fab fa-github mr-1"></i> github.com/OlafemTech
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="flex items-center">
+                    <i class="fas fa-map-marker-alt text-blue-400 mr-2"></i>
+                    <span>Abuja, Nigeria</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-envelope text-blue-400 mr-2"></i>
+                    <a href="mailto:habeeboluwafemi27@gmail.com" class="hover:text-blue-300 transition-colors">habeeboluwafemi27@gmail.com</a>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-phone text-blue-400 mr-2"></i>
+                    <span>+2348131017099</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-globe text-blue-400 mr-2"></i>
+                    <a href="https://contra.com/habeeb_oluwafemi_732wf126" target="_blank" rel="noopener" class="hover:text-blue-300 transition-colors">Contra Profile</a>
+                </div>
+                <div class="flex items-center">
+                    <i class="fab fa-linkedin text-blue-400 mr-2"></i>
+                    <a href="https://www.linkedin.com/in/habeeb-oluwafemi-0b1999bb/" target="_blank" rel="noopener" class="hover:text-blue-300 transition-colors">LinkedIn Profile</a>
+                </div>
+                <div class="flex items-center">
+                    <i class="far fa-calendar-alt text-blue-400 mr-2"></i>
+                    <a href="https://calendly.com/habeeboluwafemi" target="_blank" rel="noopener" class="hover:text-blue-300 transition-colors">Book a Call</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="p-8">
+            <!-- Professional Summary -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold section-title mb-6">Professional Summary</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Specialized frontend developer and SEO strategist crafting visually stunning websites that rank exceptionally well in search engines. With expertise in creating responsive interfaces and implementing advanced optimization techniques, I deliver digital experiences that are both beautiful to users and visible to algorithms. Experienced in leading development teams and managing complex web projects across NGO, e-commerce, startup, business, and educational sectors with a focus on social impact.
+                </p>
+            </section>
+
+            <!-- Core Skills -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold section-title mb-6">Core Skills</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-2 flex items-center">
+                            <i class="fas fa-code text-blue-500 mr-2"></i>Frontend Development
+                        </h3>
+                        <ul class="list-disc list-inside text-gray-700 ml-6">
+                            <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                            <li>TailwindCSS, Bootstrap, jQuery</li>
+                            <li>Responsive & Mobile-First Design</li>
+                            <li>Cross-Browser Compatibility</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-2 flex items-center">
+                            <i class="fas fa-search text-blue-500 mr-2"></i>SEO & Analytics
+                        </h3>
+                        <ul class="list-disc list-inside text-gray-700 ml-6">
+                            <li>On-page & Technical SEO</li>
+                            <li>Keyword Research & Optimization</li>
+                            <li>Google Analytics & Search Console</li>
+                            <li>Performance Optimization</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-2 flex items-center">
+                            <i class="fas fa-server text-blue-500 mr-2"></i>Backend & Database
+                        </h3>
+                        <ul class="list-disc list-inside text-gray-700 ml-6">
+                            <li>PHP, MySQL, Python (Flask)</li>
+                            <li>Firebase, RESTful APIs</li>
+                            <li>Database Design & Optimization</li>
+                            <li>Server Management (cPanel)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-2 flex items-center">
+                            <i class="fas fa-tools text-blue-500 mr-2"></i>Tools & Platforms
+                        </h3>
+                        <ul class="list-disc list-inside text-gray-700 ml-6">
+                            <li>Git, GitHub, VS Code</li>
+                            <li>WordPress, Wix, Google Business</li>
+                            <li>XAMPP, FileZilla</li>
+                            <li>Project Management Tools</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Professional Experience -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold section-title mb-6">Professional Experience</h2>
+                
+                <!-- ANAYPD -->
+                <div class="mb-8">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+                        <h3 class="text-xl font-semibold text-gray-900">IT Lead / Web Administrator</h3>
+                        <div class="text-gray-600 font-medium">2019 - Present</div>
+                    </div>
+                    <div class="text-gray-800 font-medium mb-2">African Network of Adolescent and Young Persons Development (ANAYD)</div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Completely revamped the organization's website in 6 weeks, transforming it from an outdated platform to a modern, responsive site that perfectly represents their mission</li>
+                        <li>Implemented SEO best practices resulting in improved search engine visibility and increased organic traffic by 45%</li>
+                        <li>Led the development of a GBV Support web app for affected youth across Nigeria, focusing on accessibility and security</li>
+                        <li>Mentored over 625 young people in web development and digital skills as part of the organization's youth empowerment initiative</li>
+                    </ul>
+                </div>
+                
+                <!-- NYAN -->
+                <div class="mb-8">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+                        <h3 class="text-xl font-semibold text-gray-900">Web Administrator (Freelance)</h3>
+                        <div class="text-gray-600 font-medium">2020 - Present</div>
+                    </div>
+                    <div class="text-gray-800 font-medium mb-2">National Youth Assembly of Nigeria (NYAN)</div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Designed and currently maintain the official NYAN website with SEO best practices, increasing visibility and engagement</li>
+                        <li>Streamlined content publishing workflows for national updates, improving communication efficiency</li>
+                        <li>Coordinated backend improvements using PHP and MySQL for dynamic content integration</li>
+                        <li>Assisted in social media management and all web/tech related activities</li>
+                    </ul>
+                </div>
+                
+                <!-- Brain Builder -->
+                <div>
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+                        <h3 class="text-xl font-semibold text-gray-900">Web Development Tutor</h3>
+                        <div class="text-gray-600 font-medium">2012 - 2013</div>
+                    </div>
+                    <div class="text-gray-800 font-medium mb-2">Brain Builder ICT, Kaduna</div>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Taught fundamentals of web development to young adults, covering HTML, CSS, JavaScript, and basic PHP</li>
+                        <li>Mentored students on building personal websites and introduced early SEO practices</li>
+                        <li>Developed practical curriculum that emphasized real-world applications and portfolio building</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Highlighted Projects -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold section-title mb-6">Highlighted Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- ANAYPD Website -->
+                    <div class="bg-gray-50 rounded-lg p-5 shadow-md">
+                        <div class="flex items-start">
+                            <div class="text-2xl text-blue-500 mr-3">🌍</div>
+                            <div>
+                                <div class="flex items-center">
+                                    <h3 class="font-semibold text-gray-900">ANAYD Website</h3>
+                                    <span class="ml-2 px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full">Completed</span>
+                                </div>
+                                <p class="text-sm text-blue-600 mb-2">HTML5, TailwindCSS, JavaScript, SEO</p>
+                                <p class="text-gray-700 text-sm">Designed and developed a mission-focused platform with optimized performance, accessibility, and mobile responsiveness.</p>
+                                <a href="https://www.anayd.org" target="_blank" rel="noopener" class="text-blue-500 text-sm inline-flex items-center mt-2 hover:text-blue-700">
+                                    <i class="fas fa-external-link-alt mr-1"></i> View Live Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- NYAN Website -->
+                    <div class="bg-gray-50 rounded-lg p-5 shadow-md">
+                        <div class="flex items-start">
+                            <div class="text-2xl text-blue-500 mr-3">🌐</div>
+                            <div>
+                                <div class="flex items-center">
+                                    <h3 class="font-semibold text-gray-900">NYAN Official Website</h3>
+                                    <span class="ml-2 px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full">Completed</span>
+                                </div>
+                                <p class="text-sm text-blue-600 mb-2">HTML5, TailwindCSS, JavaScript, SEO</p>
+                                <p class="text-gray-700 text-sm">Built and currently manage the official National Youth Assembly of Nigeria website. Integrated SEO best practices for increased visibility.</p>
+                                <a href="https://www.nyan.org.ng" target="_blank" rel="noopener" class="text-blue-500 text-sm inline-flex items-center mt-2 hover:text-blue-700">
+                                    <i class="fas fa-external-link-alt mr-1"></i> View Live Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Progressive Law Firm -->
+                    <div class="bg-gray-50 rounded-lg p-5 shadow-md">
+                        <div class="flex items-start">
+                            <div class="text-2xl text-blue-500 mr-3">🌐</div>
+                            <div>
+                                <div class="flex items-center">
+                                    <h3 class="font-semibold text-gray-900">Progressive Law Firm</h3>
+                                    <span class="ml-2 px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full">Completed</span>
+                                </div>
+                                <p class="text-sm text-blue-600 mb-2">HTML5, TailwindCSS, JavaScript</p>
+                                <p class="text-gray-700 text-sm">A sophisticated legal one-page website with multilingual support, responsive design and client acquisition system with SEO-optimized architectures.</p>
+                                <a href="https://olafemtech.github.io/Progression-Law-Firm---Modern-Legal-Digital-Presence/" target="_blank" rel="noopener" class="text-blue-500 text-sm inline-flex items-center mt-2 hover:text-blue-700">
+                                    <i class="fas fa-external-link-alt mr-1"></i> View Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Ashshifa Company -->
+                    <div class="bg-gray-50 rounded-lg p-5 shadow-md">
+                        <div class="flex items-start">
+                            <div class="text-2xl text-blue-500 mr-3">🌐</div>
+                            <div>
+                                <div class="flex items-center">
+                                    <h3 class="font-semibold text-gray-900">Ashshifa Company</h3>
+                                    <span class="ml-2 px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full">Completed</span>
+                                </div>
+                                <p class="text-sm text-blue-600 mb-2">Wix, SEO, Google Business Profile</p>
+                                <p class="text-gray-700 text-sm">Rebuilt their e-commerce site with a cleaner UI, optimized performance, and integrated Google Business Profile, resulting in a 20% increase in online sales.</p>
+                                <a href="https://www.ashshifacompany.com/" target="_blank" rel="noopener" class="text-blue-500 text-sm inline-flex items-center mt-2 hover:text-blue-700">
+                                    <i class="fas fa-external-link-alt mr-1"></i> View Live Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Avrilbywk (Ongoing) -->
+                    <div class="bg-gray-50 rounded-lg p-5 shadow-md border-l-4 border-blue-400">
+                        <div class="flex items-start">
+                            <div class="text-2xl text-blue-500 mr-3">🌐</div>
+                            <div>
+                                <div class="flex items-center">
+                                    <h3 class="font-semibold text-gray-900">Avrilbywk</h3>
+                                    <span class="ml-2 px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Ongoing</span>
+                                </div>
+                                <p class="text-sm text-blue-600 mb-2">Wix, SEO, Google Business Profile</p>
+                                <p class="text-gray-700 text-sm">Developing a modern e-commerce platform with enhanced UI/UX, optimized site performance, and integrated marketing tools, leading to improved customer engagement and sales conversion.</p>
+                                <a href="https://www.avrilbywk.com/" target="_blank" rel="noopener" class="text-blue-500 text-sm inline-flex items-center mt-2 hover:text-blue-700">
+                                    <i class="fas fa-external-link-alt mr-1"></i> View Live Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- TalkToB.com (Ongoing) -->
+                    <div class="bg-gray-50 rounded-lg p-5 shadow-md border-l-4 border-blue-400">
+                        <div class="flex items-start">
+                            <div class="text-2xl text-blue-500 mr-3">🌐</div>
+                            <div>
+                                <div class="flex items-center">
+                                    <h3 class="font-semibold text-gray-900">TalkToB.com</h3>
+                                    <span class="ml-2 px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Ongoing</span>
+                                </div>
+                                <p class="text-sm text-blue-600 mb-2">HTML5, TailwindCSS, JavaScript</p>
+                                <p class="text-gray-700 text-sm">Developing a platform for award-winning actor Biola Adebayo's "Talk To B" initiative, creating a safe digital space for individuals to share personal stories of resilience, transformation, and triumph. Features responsive design, modern UI, and optimized user experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Narrid-ecommerce (Ongoing) -->
+                    <div class="bg-gray-50 rounded-lg p-5 shadow-md border-l-4 border-blue-400">
+                        <div class="flex items-start">
+                            <div class="text-2xl text-blue-500 mr-3">🛒</div>
+                            <div>
+                                <div class="flex items-center">
+                                    <h3 class="font-semibold text-gray-900">Narrid E-commerce Platform</h3>
+                                    <span class="ml-2 px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Ongoing</span>
+                                </div>
+                                <p class="text-sm text-blue-600 mb-2">Full-Stack Development</p>
+                                <p class="text-gray-700 text-sm">Building a comprehensive e-commerce solution with HTML5/TailwindCSS frontend, PHP/Laravel backend, Python microservices, MySQL/Redis databases, and integrated payment systems (Paystack, Flutterwave).</p>
+                                <p class="text-gray-600 text-xs mt-1">Tech stack: Docker, NGINX, CI/CD with GitHub Actions</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- GBV Support Web App (Ongoing) -->
+                    <div class="bg-gray-50 rounded-lg p-5 shadow-md border-l-4 border-blue-400">
+                        <div class="flex items-start">
+                            <div class="text-2xl text-blue-500 mr-3">🛡️</div>
+                            <div>
+                                <div class="flex items-center">
+                                    <h3 class="font-semibold text-gray-900">GBV Support Web App</h3>
+                                    <span class="ml-2 px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Ongoing</span>
+                                </div>
+                                <p class="text-sm text-blue-600 mb-2">HTML, CSS, JavaScript, PHP, MySQL</p>
+                                <p class="text-gray-700 text-sm">Developing a functional, secure, and accessible web platform supporting young people affected by GBV across Nigeria.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- School Management System -->
+                    <div class="bg-gray-50 rounded-lg p-5 shadow-md">
+                        <div class="flex items-start">
+                            <div class="text-2xl text-blue-500 mr-3">🏫</div>
+                            <div>
+                                <div class="flex items-center">
+                                    <h3 class="font-semibold text-gray-900">School Management System</h3>
+                                    <span class="ml-2 px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full">Completed</span>
+                                </div>
+                                <p class="text-sm text-blue-600 mb-2">HTML, CSS, JavaScript, PHP, MySQL</p>
+                                <p class="text-gray-700 text-sm">Designed a full web-based school portal for Kaduna & Zamfara orphanage schools, managing student and teachers' records, grading system, and performance tracking.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- FormFlow Automation Suite -->
+                    <div class="bg-gray-50 rounded-lg p-5 shadow-md">
+                        <div class="flex items-start">
+                            <div class="text-2xl text-blue-500 mr-3">📄</div>
+                            <div>
+                                <div class="flex items-center">
+                                    <h3 class="font-semibold text-gray-900">FormFlow Automation Suite</h3>
+                                    <span class="ml-2 px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full">Completed</span>
+                                </div>
+                                <p class="text-sm text-blue-600 mb-2">Python, JavaScript, PDF Processing, Web Automation</p>
+                                <p class="text-gray-700 text-sm">Developed a comprehensive solution that automates the extraction of data from filled-out PDF forms and submits this data to government websites, streamlining administrative processes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications -->
+            <section>
+                <h2 class="text-2xl font-bold section-title mb-6">Certifications & Education</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-gray-50 rounded-lg p-5 shadow-md">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-certificate text-blue-500 mr-2"></i>
+                            <h3 class="font-semibold text-gray-900">W3Schools Certified (2024)</h3>
+                        </div>
+                        <p class="text-gray-700 text-sm">HTML, CSS, JavaScript, PHP, Python, SQL, and SEO with focus on responsive design, web interactivity, backend logic, and search engine optimization.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 rounded-lg p-5 shadow-md">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-certificate text-blue-500 mr-2"></i>
+                            <h3 class="font-semibold text-gray-900">Google SEO Specialization (2024)</h3>
+                        </div>
+                        <p class="text-gray-700 text-sm">Coursera / UC Davis - Covered technical SEO, content strategy, mobile optimization, and Google Business integration.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 rounded-lg p-5 shadow-md">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-certificate text-blue-500 mr-2"></i>
+                            <h3 class="font-semibold text-gray-900">Meta Front-End Developer Professional Certificate</h3>
+                        </div>
+                        <p class="text-gray-700 text-sm">Coursera (2025, In Progress) - Comprehensive training in HTML, CSS, JavaScript, React, UI/UX principles, and building portfolio-ready projects.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 rounded-lg p-5 shadow-md">
+                        <div class="flex items-center mb-2">
+                            <i class="fas fa-certificate text-blue-500 mr-2"></i>
+                            <h3 class="font-semibold text-gray-900">Python for Everybody & Building Web Applications in PHP</h3>
+                        </div>
+                        <p class="text-gray-700 text-sm">Coursera / University of Michigan (2024) - Backend scripting, automation, data-driven applications, web forms, CRUD operations, and MySQL integration.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-100 p-6 text-center text-gray-600 text-sm">
+            <p>References available upon request. View my complete portfolio at <a href="https://github.com/OlafemTech" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 transition-colors">github.com/OlafemTech</a></p>
+            <p class="mt-2">Last updated: May 2025</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1871 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habeeb Oluwafemi | Frontend Developer & Full-Stack Problem Solver</title>
+    <meta name="description" content="Personal portfolio of Habeeb Oluwafemi, a frontend developer with full-stack proficiency in HTML, TailwindCSS, JavaScript, PHP, MySQL, and Python">
+    
+    <!-- Enhanced SEO Meta Tags -->
+    <meta name="keywords" content="frontend developer, web design, TailwindCSS, JavaScript, React, SEO, full-stack developer, Habeeb Oluwafemi, web development, responsive design">
+    <meta name="author" content="Habeeb Oluwafemi">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Habeeb Oluwafemi | Frontend Developer & Full-Stack Problem Solver">
+    <meta property="og:description" content="Personal portfolio showcasing frontend development skills, responsive design, and full-stack capabilities">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://contra.com/habeeb_oluwafemi_732wf126">
+    <meta property="og:image" content="images/portfolio-preview.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@femi_ultim8">
+    <meta name="twitter:title" content="Habeeb Oluwafemi | Frontend Developer">
+    <meta name="twitter:description" content="Frontend developer specializing in modern, responsive, and SEO-optimized websites">
+    <meta name="twitter:image" content="images/portfolio-preview.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://contra.com/habeeb_oluwafemi_732wf126">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#10B981',
+                        accent: '#F59E0B',
+                        dark: '#111827',
+                        light: '#F9FAFB'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/testimonial-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light dark:bg-dark text-gray-800 dark:text-gray-200 transition-colors duration-300">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 bg-white/80 dark:bg-dark/80 backdrop-blur-md transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-primary">
+                    <span class="text-dark dark:text-light">&lt;</span>
+                    <span>Habeeb Oluwafemi</span>
+                    <span class="text-dark dark:text-light">/&gt;</span>
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="hover:text-primary transition-colors">Home</a>
+                    <a href="#about" class="hover:text-primary transition-colors">About</a>
+                    <a href="#projects" class="hover:text-primary transition-colors">Projects</a>
+                    <a href="#services" class="hover:text-primary transition-colors">Services</a>
+                    <a href="#skills" class="hover:text-primary transition-colors">Skills</a>
+                    <a href="#timeline" class="hover:text-primary transition-colors">Timeline</a>
+                    <a href="#testimonials" class="hover:text-primary transition-colors">Testimonials</a>
+                    <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:block"></i>
+                    </button>
+                    <button id="mobile-menu-button" class="md:hidden p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" title="Toggle menu">
+                        <i class="fas fa-bars"></i>
+                        <span class="sr-only">Toggle menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white dark:bg-dark border-t border-gray-200 dark:border-gray-700">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="#home" class="hover:text-primary transition-colors">Home</a>
+                    <a href="#about" class="hover:text-primary transition-colors">About</a>
+                    <a href="#projects" class="hover:text-primary transition-colors">Projects</a>
+                    <a href="#services" class="hover:text-primary transition-colors">Services</a>
+                    <a href="#skills" class="hover:text-primary transition-colors">Skills</a>
+                    <a href="#timeline" class="hover:text-primary transition-colors">Timeline</a>
+                    <a href="#testimonials" class="hover:text-primary transition-colors">Testimonials</a>
+                    <a href="#github" class="hover:text-primary transition-colors">GitHub</a>
+                    <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center relative overflow-hidden">
+        <!-- Background Gradient -->
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-indigo-950 z-0"></div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute inset-0 z-0">
+            <div class="floating-element floating-animation-medium absolute top-1/4 left-1/4 bg-primary/10 dark:bg-primary/20 w-32 h-32 rounded-full blur-xl"></div>
+            <div class="floating-element floating-animation-medium absolute top-1/3 right-1/4 bg-secondary/10 dark:bg-secondary/20 w-40 h-40 rounded-full blur-xl"></div>
+            <div class="floating-element floating-animation-medium absolute bottom-1/4 right-1/3 bg-accent/10 dark:bg-accent/20 w-36 h-36 rounded-full blur-xl"></div>
+        </div>
+        
+        <!-- Floating Code Snippets -->
+        <div class="absolute inset-0 z-0 opacity-20 dark:opacity-30 overflow-hidden">
+            <div class="code-snippet floating-animation-slow absolute top-20 left-10 transform -rotate-6 bg-white dark:bg-gray-800 p-4 rounded-md shadow-lg">
+                <pre class="text-xs"><code>&lt;div class="flex justify-center"&gt;
+  &lt;h1&gt;Hello World&lt;/h1&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+            <div class="code-snippet floating-animation-slow absolute top-40 right-20 transform rotate-3 bg-white dark:bg-gray-800 p-4 rounded-md shadow-lg">
+                <pre class="text-xs"><code>const greeting = () => {
+  return "Hello, I'm a developer";
+};</code></pre>
+            </div>
+            <div class="code-snippet floating-animation-slow absolute bottom-40 left-1/4 transform rotate-6 bg-white dark:bg-gray-800 p-4 rounded-md shadow-lg">
+                <pre class="text-xs"><code>@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}</code></pre>
+            </div>
+        </div>
+        
+        <!-- Content -->
+        <div class="container mx-auto px-6 py-12 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <!-- SEO-optimized headline structure -->
+                <div aria-labelledby="main-heading" class="headline-container relative">
+                    <!-- Decorative elements for frontend flair -->
+                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 text-xs md:text-sm text-primary/70 font-mono tracking-wider">
+                        <span class="inline-block">&lt;<span class="text-green-500">developer</span>&gt;</span>
+                    </div>
+                    
+                    <!-- Structured data for SEO (hidden visually) -->
+                    <div class="sr-only" itemprop="author" itemscope itemtype="http://schema.org/Person">
+                        <meta itemprop="name" content="Habeeb Oluwafemi">
+                        <meta itemprop="jobTitle" content="Frontend Developer & Full-Stack Problem Solver">
+                        <meta itemprop="url" content="https://github.com/OlafemTech">
+                        <meta itemprop="email" content="habeeboluwafemi27@gmail.com">
+                    </div>
+                    
+                    <!-- Main heading with modern gradient and letter shooting animation -->
+                    <h1 id="main-heading" class="text-4xl md:text-6xl font-bold mb-2 relative inline-block">
+                        <span class="text-dark dark:text-light block">Hi, I'm <span id="animated-name" class="inline-block">Habeeb Oluwafemi</span></span>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary block mt-2">Frontend Developer & <br class="md:hidden"> Full-Stack Problem Solver</span>
+                    </h1>
+                    
+                    <!-- Keywords for SEO visibility -->
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mt-3 mb-6 font-mono tracking-tight">
+                        <span class="inline-block px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded-full mx-1 my-1">HTML5</span>
+                        <span class="inline-block px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded-full mx-1 my-1">TailwindCSS</span>
+                        <span class="inline-block px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded-full mx-1 my-1">JavaScript</span>
+                        <span class="inline-block px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded-full mx-1 my-1">Typescript</span>
+                        <span class="inline-block px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded-full mx-1 my-1">PHP MySQL</span>
+                        <!-- <span class="inline-block px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded-full mx-1 my-1">Python</span> -->
+                        <span class="inline-block px-2 py-1 bg-gray-100 dark:bg-gray-800 rounded-full mx-1 my-1">SEO</span>
+                    </p>
+                    
+                    <div class="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-xs md:text-sm text-primary/70 font-mono tracking-wider">
+                        <span class="inline-block">&lt;/<span class="text-green-500">developer</span>&gt;</span>
+                    </div>
+                </div>
+                
+                <!-- Typing text with increased height for better visibility -->
+                <div class="h-20 mb-8 mt-10">
+                    <p id="typing-text" class="text-xl md:text-2xl text-gray-700 dark:text-gray-300"></p>
+                </div>
+                
+                <!-- Enhanced CTA button with animation -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 flex-wrap">
+                    <a href="#projects" class="group inline-flex items-center bg-primary hover:bg-primary/90 text-white font-medium py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
+                        View My Work
+                        <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    
+                    <a href="#contact" class="group inline-flex items-center bg-transparent border-2 border-primary text-primary hover:bg-primary/10 font-medium py-3 px-8 rounded-full transition-all transform hover:scale-105">
+                        Contact Me
+                        <i class="fas fa-envelope ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    
+                    <a href="https://contra.com/habeeb_oluwafemi_732wf126" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center bg-[#FF5757] hover:bg-[#FF5757]/90 text-white font-medium py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
+                        Hire Me on Contra
+                        <i class="fas fa-external-link-alt ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    
+                    <a href="https://calendly.com/habeeboluwafemi" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center bg-[#006BFF] hover:bg-[#006BFF]/90 text-white font-medium py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
+                        Book a Call
+                        <i class="far fa-calendar-alt ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+                
+                <!-- Social media links with enhanced accessibility -->
+                <div class="mt-12 flex justify-center space-x-6">
+                    <!-- Enhanced social media links with accessibility and SEO improvements -->
+                    <a href="https://github.com/OlafemTech" target="_blank" rel="noopener" class="social-icon group relative p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-primary/10 dark:hover:bg-primary/20 transition-all" title="GitHub Profile" aria-label="GitHub Profile">
+                        <i class="fab fa-github text-2xl text-gray-700 dark:text-gray-300 group-hover:text-primary transition-colors"></i>
+                        <span class="sr-only">GitHub Profile</span>
+                        <span class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/habeeb-oluwafemi-0b1999bb/" target="_blank" rel="noopener" class="social-icon group relative p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-primary/10 dark:hover:bg-primary/20 transition-all" title="LinkedIn Profile" aria-label="LinkedIn Profile">
+                        <i class="fab fa-linkedin-in text-2xl text-gray-700 dark:text-gray-300 group-hover:text-primary transition-colors"></i>
+                        <span class="sr-only">LinkedIn Profile</span>
+                        <span class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">LinkedIn</span>
+                    </a>
+                    <a href="https://x.com/femi_ultim8" target="_blank" rel="noopener" class="social-icon group relative p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-primary/10 dark:hover:bg-primary/20 transition-all" title="Twitter Profile" aria-label="Twitter Profile">
+                        <i class="fab fa-twitter text-2xl text-gray-700 dark:text-gray-300 group-hover:text-primary transition-colors"></i>
+                        <span class="sr-only">Twitter Profile</span>
+                        <span class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Twitter</span>
+                    </a>
+                    <a href="https://www.instagram.com/habeeb_femi_/" target="_blank" rel="noopener" class="social-icon group relative p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-primary/10 dark:hover:bg-primary/20 transition-all" title="Instagram Profile" aria-label="Instagram Profile">
+                        <i class="fab fa-instagram text-2xl text-gray-700 dark:text-gray-300 group-hover:text-primary transition-colors"></i>
+                        <span class="sr-only">Instagram Profile</span>
+                        <span class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Instagram</span>
+                    </a>
+                    <a href="mailto:habeeboluwafemi27@gmail.com" class="social-icon group relative p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-primary/10 dark:hover:bg-primary/20 transition-all" title="Email Me" aria-label="Email Me">
+                        <i class="fas fa-envelope text-2xl text-gray-700 dark:text-gray-300 group-hover:text-primary transition-colors"></i>
+                        <span class="sr-only">Email Me</span>
+                        <span class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Email</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-gray-600 dark:text-gray-400"></i>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-white dark:bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">
+                <span class="text-primary">About</span> Me
+            </h2>
+            
+            <!-- Terminal-style About Me -->
+            <div class="bg-gray-900 rounded-lg shadow-xl overflow-hidden mb-16 max-w-4xl mx-auto">
+                <!-- Terminal Header -->
+                <div class="bg-gray-800 px-4 py-2 flex items-center">
+                    <div class="flex space-x-2">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    </div>
+                    <div class="text-gray-400 text-sm mx-auto">developer@portfolio: ~/about-me</div>
+                </div>
+                
+                <!-- Terminal Content -->
+                <div class="p-4 font-mono text-green-400 text-sm md:text-base">
+                    <div class="flex">
+                        <span class="text-blue-400 mr-2">$</span>
+                        <span id="terminal-command" class="terminal-text"></span>
+                    </div>
+                    <div id="terminal-output" class="mt-2 space-y-2"></div>
+                    <div class="flex mt-4 items-center">
+                        <span class="text-blue-400 mr-2">$</span>
+                        <span class="terminal-cursor">█</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h3 class="text-2xl font-bold mb-4">Who am I?</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6">
+                        I'm a specialized frontend developer and SEO strategist, crafting visually stunning websites that rank exceptionally well in search engines. With expertise in creating responsive interfaces and implementing advanced optimization techniques, I deliver digital experiences that are both beautiful to users and visible to algorithms.
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6">
+                        My approach combines clean code principles with cutting-edge design trends to deliver responsive, accessible, and performant applications that exceed client expectations.
+                    </p>
+                    <div class="flex flex-wrap gap-3 mb-8">
+                        <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded-full text-sm">HTML</span>
+                        <span class="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/30 text-cyan-800 dark:text-cyan-300 rounded-full text-sm">TailwindCSS</span>
+                        <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300 rounded-full text-sm">JavaScript</span>
+                        <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-300 rounded-full text-sm">PHP</span>
+                        <span class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 rounded-full text-sm">MySQL</span>
+                        <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 rounded-full text-sm">Python</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#" class="inline-flex items-center bg-primary hover:bg-primary/90 text-white font-medium py-2 px-4 rounded-full transition-all transform hover:scale-105 shadow-md hover:shadow-lg">
+                            <i class="fas fa-download mr-2"></i> Download CV
+                        </a>
+                        <a href="https://github.com/OlafemTech" target="_blank" rel="noopener" class="inline-flex items-center bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-medium py-2 px-4 rounded-full transition-all transform hover:scale-105 shadow-md hover:shadow-lg" title="GitHub Profile">
+                            <i class="fab fa-github mr-2"></i> GitHub
+                        </a>
+                    </div>
+                    
+                    <!-- GitHub Activity Widget -->
+                    <div class="mt-8 bg-gray-50 dark:bg-gray-800 rounded-lg p-4 shadow-md">
+                        <h4 class="text-lg font-bold mb-3 flex items-center">
+                            <i class="fab fa-github mr-2 text-gray-700 dark:text-gray-300"></i>
+                            GitHub Activity
+                        </h4>
+                        <div class="github-activity-widget">
+                            <!-- GitHub Contribution Calendar -->
+                            <div class="github-calendar mb-4">
+                                <div class="flex flex-wrap gap-1">
+                                    <!-- Simulated GitHub contribution calendar -->
+                                    <!-- Each div represents a day, with different background colors based on contribution count -->
+                                    <!-- This would be dynamically generated in a real implementation -->
+                                    <div class="w-3 h-3 bg-green-100 dark:bg-green-900/30 rounded-sm"></div>
+                                    <div class="w-3 h-3 bg-green-200 dark:bg-green-800/40 rounded-sm"></div>
+                                    <div class="w-3 h-3 bg-green-300 dark:bg-green-700/50 rounded-sm"></div>
+                                    <div class="w-3 h-3 bg-green-100 dark:bg-green-900/30 rounded-sm"></div>
+                                    <div class="w-3 h-3 bg-green-400 dark:bg-green-600/60 rounded-sm"></div>
+                                    <div class="w-3 h-3 bg-green-100 dark:bg-green-900/30 rounded-sm"></div>
+                                    <div class="w-3 h-3 bg-green-200 dark:bg-green-800/40 rounded-sm"></div>
+                                    <!-- More contribution blocks would be here -->
+                                </div>
+                            </div>
+                            
+                            <!-- Recent Activity -->
+                            <div class="recent-commits text-sm">
+                                <h5 class="font-medium mb-2 text-gray-700 dark:text-gray-300">Recent Commits</h5>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start">
+                                        <div class="text-green-500 mr-2"><i class="fas fa-code-commit"></i></div>
+                                        <div>
+                                            <div class="text-gray-800 dark:text-gray-200">Updated portfolio project modals</div>
+                                            <div class="text-gray-500 dark:text-gray-400 text-xs">2 days ago</div>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="text-green-500 mr-2"><i class="fas fa-code-commit"></i></div>
+                                        <div>
+                                            <div class="text-gray-800 dark:text-gray-200">Fixed responsive layout issues</div>
+                                            <div class="text-gray-500 dark:text-gray-400 text-xs">4 days ago</div>
+                                        </div>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="text-green-500 mr-2"><i class="fas fa-code-commit"></i></div>
+                                        <div>
+                                            <div class="text-gray-800 dark:text-gray-200">Implemented dark mode toggle</div>
+                                            <div class="text-gray-500 dark:text-gray-400 text-xs">1 week ago</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 flex justify-center">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-primary/20 rounded-full blur-xl transform -translate-x-4 translate-y-4"></div>
+                        <img src="images/Habeeb_Oluwafemi-1.JPG" alt="Habeeb Oluwafemi" class="rounded-full w-64 h-64 object-cover border-4 border-white dark:border-gray-800 shadow-xl relative z-10">
+                        <div class="absolute -bottom-4 -right-4 bg-white dark:bg-gray-800 rounded-full p-4 shadow-lg z-20">
+                            <i class="fas fa-code text-2xl text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">
+                <span class="text-primary">Selected</span> Projects
+            </h2>
+            <p class="text-gray-600 dark:text-gray-400 text-center max-w-2xl mx-auto mb-16">
+                Explore my latest work showcasing my skills in frontend development, SEO optimization, and full-stack solutions.
+            </p>
+            
+            <!-- Project Filter -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="project-filter-btn active px-4 py-2 rounded-full bg-primary text-white" data-filter="all">All</button>
+                <button class="project-filter-btn px-4 py-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors" data-filter="frontend">Frontend</button>
+                <button class="project-filter-btn px-4 py-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors" data-filter="seo">SEO</button>
+                <button class="project-filter-btn px-4 py-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors" data-filter="backend">Backend</button>
+            </div>
+            
+            <!-- Projects Grid with Pagination -->
+            <div id="projects-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1: ANAYPD Website -->
+                <div class="project-card group" data-category="seo">
+                    <div class="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="relative overflow-hidden">
+                            <video class="w-full h-64 object-cover object-top" muted loop autoplay poster="images/projects/anayd-homepage.jpg">
+                                <source src="videos/ANAYD - African Network of Adolescent & Young Persons Development - Google Chrome 2025-05-14 15-05-53.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                <div class="p-6 w-full">
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#HTML5</span>
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#TailwindCSS</span>
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#JavaScript</span>
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#SEO</span>
+                                    </div>
+                                    <div class="flex space-x-3">
+                                        <a href="https://www.anayd.org" target="_blank" rel="noopener noreferrer" class="px-3 py-1 bg-white text-gray-900 rounded-full text-sm hover:bg-gray-100 transition-colors">
+                                            <i class="fas fa-globe mr-1"></i> Live Site
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">🌍 ANAYD Website</h3>
+                                <span class="text-sm text-gray-500 dark:text-gray-400">2024</span>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Designed and developed the organization's website - a mission-focused platform with optimized performance, accessibility, and mobile responsiveness.</p>
+                            <button class="project-details-btn text-primary hover:text-primary/80 text-sm font-medium flex items-center transition-colors">
+                                View Details <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2: NYAN Official Website -->
+                <div class="project-card group" data-category="seo">
+                    <div class="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="relative overflow-hidden">
+                            <video class="w-full h-64 object-cover object-top" muted loop autoplay poster="images/projects/nyan-homepage.jpg">
+                                <source src="videos/National Youth Assembly of Nigeria (NYAN) _ Youth Empowerment & National Development - Google Chrome 2025-05-21 15-15-59.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                <div class="p-6 w-full">
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#HTML5</span>
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#TailwindCSS</span>
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#JavaScript</span>
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#SEO</span>
+                                    </div>
+                                    <div class="flex space-x-3">
+                                        <a href="https://www.nyan.org.ng" target="_blank" rel="noopener noreferrer" class="px-3 py-1 bg-white text-gray-900 rounded-full text-sm hover:bg-gray-100 transition-colors">
+                                            <i class="fas fa-globe mr-1"></i> Live Site
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">🌐 NYAN Official Website</h3>
+                                <span class="text-sm text-gray-500 dark:text-gray-400">2023</span>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Built and currently manage the official National Youth Assembly of Nigeria website. Integrated SEO best practices for increased visibility.</p>
+                            <button class="project-details-btn text-primary hover:text-primary/80 text-sm font-medium flex items-center transition-colors">
+                                View Details <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3: Progressive Law Firm -->
+                <div class="project-card group" data-category="frontend">
+                    <div class="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="relative overflow-hidden">
+                            <video class="w-full h-64 object-cover object-top" muted loop autoplay poster="images/projects/law-firm-poster.jpg">
+                                <source src="videos/progressive law firm.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                <div class="p-6 w-full">
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#HTML5</span>
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#TailwindCSS</span>
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#JavaScript</span>
+                                    </div>
+                                    <div class="flex space-x-3">
+                                        <a href="https://olafemtech.github.io/Progression-Law-Firm---Modern-Legal-Digital-Presence/" target="_blank" rel="noopener noreferrer" class="px-3 py-1 bg-white text-gray-900 rounded-full text-sm hover:bg-gray-100 transition-colors">
+                                            <i class="fas fa-globe mr-1"></i> Live Demo
+                                        </a>
+                                        <a href="https://github.com/OlafemTech/Progression-Law-Firm---Modern-Legal-Digital-Presence" target="_blank" rel="noopener noreferrer" class="px-3 py-1 bg-gray-800 text-white rounded-full text-sm hover:bg-gray-700 transition-colors">
+                                            <i class="fab fa-github mr-1"></i> GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">🌐 Progressive Law Firm</h3>
+                                <span class="text-sm text-gray-500 dark:text-gray-400">2024</span>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">A sophisticated legal one-page website with multilingual support, responsive design and client acquisition system with SEO-optimized architectures.</p>
+                            <button class="project-details-btn text-primary hover:text-primary/80 text-sm font-medium flex items-center transition-colors">
+                                View Details <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2: Ashshifa Company -->
+                <div class="project-card group" data-category="frontend">
+                    <div class="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1607083206968-13611e3d76db?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Ashshifa Company Website" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                <div class="p-6 w-full">
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#Wix</span>
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#E-commerce</span>
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#SEO</span>
+                                    </div>
+                                    <div class="flex space-x-3">
+                                        <a href="https://www.ashshifacompany.com/" class="px-3 py-1 bg-white text-gray-900 rounded-full text-sm hover:bg-gray-100 transition-colors">
+                                            <i class="fas fa-globe mr-1"></i> Live Demo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">🌐 Ashshifa Company</h3>
+                                <span class="text-sm text-gray-500 dark:text-gray-400">2024</span>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Rebuilt their e-commerce site with a cleaner UI, optimized performance, and integrated Google Business Profile, resulting in a 20% increase in online sales.</p>
+                            <button class="project-details-btn text-primary hover:text-primary/80 text-sm font-medium flex items-center transition-colors">
+                                View Details <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3: Avrilbywk -->
+                <div class="project-card group" data-category="frontend">
+                    <div class="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Avrilbywk Fashion Website" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                <div class="p-6 w-full">
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#Wix</span>
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#Fashion</span>
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#SEO</span>
+                                    </div>
+                                    <div class="flex space-x-3">
+                                        <a href="https://www.avrilbywk.com/" class="px-3 py-1 bg-white text-gray-900 rounded-full text-sm hover:bg-gray-100 transition-colors">
+                                            <i class="fas fa-globe mr-1"></i> Live Demo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">🌐 Avrilbywk</h3>
+                                <span class="text-sm text-gray-500 dark:text-gray-400">2025</span>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Currently revamping a high-fashion e-commerce brand's site to improve structure, collections, and SEO with targeted business profile optimization.</p>
+                            <button class="project-details-btn text-primary hover:text-primary/80 text-sm font-medium flex items-center transition-colors">
+                                View Details <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4: GBV Support Web App -->
+                <div class="project-card group" data-category="frontend">
+                    <div class="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="GBV Support Web App" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                <div class="p-6 w-full">
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#HTML</span>
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#CSS</span>
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#JavaScript</span>
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#PHP</span>
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#MySQL</span>
+                                    </div>
+                                    <div class="flex space-x-3">
+                                        <a href="#" class="px-3 py-1 bg-white text-gray-900 rounded-full text-sm hover:bg-gray-100 transition-colors">
+                                            <i class="fas fa-globe mr-1"></i> Live Demo
+                                        </a>
+                                        <a href="#" class="px-3 py-1 bg-gray-800 text-white rounded-full text-sm hover:bg-gray-700 transition-colors">
+                                            <i class="fab fa-github mr-1"></i> GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">🛡️ GBV Support Web App</h3>
+                                <span class="text-sm text-gray-500 dark:text-gray-400">2024</span>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Developed a functional, secure, and accessible web platform supporting young people affected by GBV across Nigeria.</p>
+                            <button class="project-details-btn text-primary hover:text-primary/80 text-sm font-medium flex items-center transition-colors">
+                                View Details <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5: HIV+ Youth Social Platform -->
+                <div class="project-card group" data-category="frontend">
+                    <div class="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="HIV+ Youth Social Platform" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                <div class="p-6 w-full">
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#React</span>
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#Vue.js</span>
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#JavaScript</span>
+                                    </div>
+                                    <div class="flex space-x-3">
+                                        <a href="#" class="px-3 py-1 bg-white text-gray-900 rounded-full text-sm hover:bg-gray-100 transition-colors">
+                                            <i class="fas fa-globe mr-1"></i> Live Demo
+                                        </a>
+                                        <a href="#" class="px-3 py-1 bg-gray-800 text-white rounded-full text-sm hover:bg-gray-700 transition-colors">
+                                            <i class="fab fa-github mr-1"></i> GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">❤️ HIV+ Youth Social Platform</h3>
+                                <span class="text-sm text-gray-500 dark:text-gray-400">2024</span>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Worked alongside React and Vue.js developers to build a secure networking platform for HIV-positive adolescents to connect socially and emotionally.</p>
+                            <button class="project-details-btn text-primary hover:text-primary/80 text-sm font-medium flex items-center transition-colors">
+                                View Details <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6: School Management System -->
+                <div class="project-card group" data-category="fullstack">
+                    <div class="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="relative overflow-hidden">
+                            <video class="w-full h-64 object-cover object-top" muted loop autoplay poster="images/projects/school-management-poster.jpg">
+                                <source src="videos/school-management-system-1st.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                <div class="p-6 w-full">
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#HTML</span>
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#CSS</span>
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#JavaScript</span>
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#PHP</span>
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#MySQL</span>
+                                    </div>
+                                    <div class="flex space-x-3">
+                                        <a href="#" class="px-3 py-1 bg-white text-gray-900 rounded-full text-sm hover:bg-gray-100 transition-colors">
+                                            <i class="fas fa-globe mr-1"></i> Live Demo
+                                        </a>
+                                        <a href="#" class="px-3 py-1 bg-gray-800 text-white rounded-full text-sm hover:bg-gray-700 transition-colors">
+                                            <i class="fab fa-github mr-1"></i> GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">🏫 School Management System</h3>
+                                <span class="text-sm text-gray-500 dark:text-gray-400">2023</span>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Designed a full web-based school portal for Kaduna & Zamfara orphanage schools, managing student and teachers' records, grading system, and performance tracking.</p>
+                            <button class="project-details-btn text-primary hover:text-primary/80 text-sm font-medium flex items-center transition-colors">
+                                View Details <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 7: Form Automation System -->
+                <div class="project-card group" data-category="backend">
+                    <div class="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="relative overflow-hidden">
+                            <video class="w-full h-64 object-cover object-top" muted loop autoplay poster="images/projects/form-automation-poster.jpg">
+                                <source src="videos/form automation.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                                <div class="p-6 w-full">
+                                    <div class="flex flex-wrap gap-2 mb-4">
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#JavaScript</span>
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#Node.js</span>
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#API</span>
+                                        <span class="px-2 py-1 bg-primary/80 text-white rounded text-xs">#Automation</span>
+                                    </div>
+                                    <div class="flex space-x-3">
+                                        <a href="#" class="px-3 py-1 bg-white text-gray-900 rounded-full text-sm hover:bg-gray-100 transition-colors">
+                                            <i class="fas fa-globe mr-1"></i> Live Demo
+                                        </a>
+                                        <a href="#" class="px-3 py-1 bg-gray-800 text-white rounded-full text-sm hover:bg-gray-700 transition-colors">
+                                            <i class="fab fa-github mr-1"></i> GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <h3 class="text-xl font-bold">📝 Form Automation System</h3>
+                                <span class="text-sm text-gray-500 dark:text-gray-400">2024</span>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-400 mb-4">Developed an intelligent form automation system that streamlines data collection, validation, and processing for organizations, reducing manual entry by 85%.</p>
+                            <button class="project-details-btn text-primary hover:text-primary/80 text-sm font-medium flex items-center transition-colors">
+                                View Details <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pagination Controls -->
+            <div class="flex justify-center mt-10">
+                <div class="pagination-controls flex items-center space-x-2">
+                    <button id="prev-page" class="pagination-btn bg-white dark:bg-gray-800 p-2 rounded-full shadow-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed" aria-label="Previous page" title="Previous page">
+                        <i class="fas fa-chevron-left text-gray-600 dark:text-gray-400"></i>
+                    </button>
+                    
+                    <div id="pagination-numbers" class="flex space-x-2">
+                        <!-- Pagination numbers will be inserted here by JavaScript -->
+                    </div>
+                    
+                    <button id="next-page" class="pagination-btn bg-white dark:bg-gray-800 p-2 rounded-full shadow-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed" aria-label="Next page" title="Next page">
+                        <i class="fas fa-chevron-right text-gray-600 dark:text-gray-400"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- View More Projects Button -->
+            <div class="text-center mt-8">
+                <a href="https://github.com/OlafemTech" target="_blank" rel="noopener noreferrer" class="bg-white dark:bg-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-800 dark:text-gray-200 font-medium py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-md hover:shadow-lg border border-gray-200 dark:border-gray-700 inline-flex items-center">
+                    View More Projects on GitHub <i class="fab fa-github ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50 dark:bg-gray-800 overflow-hidden">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">
+                <span class="text-primary">Services</span> That Hit Different
+            </h2>
+            <p class="text-gray-600 dark:text-gray-400 text-center max-w-2xl mx-auto mb-8">
+                Premium solutions tailored to elevate your digital presence and drive results.
+            </p>
+            
+            <!-- Services Category Tabs -->
+            <div class="flex flex-wrap justify-center mb-12 gap-2 md:gap-4">
+                <button class="service-tab-btn active bg-primary/10 dark:bg-primary/20 text-primary font-medium py-2 px-6 rounded-full transition-all hover:bg-primary/20 dark:hover:bg-primary/30" data-category="all">
+                    All Services
+                </button>
+                <button class="service-tab-btn bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 font-medium py-2 px-6 rounded-full transition-all hover:bg-gray-100 dark:hover:bg-gray-800" data-category="design">
+                    Design & Development
+                </button>
+                <button class="service-tab-btn bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 font-medium py-2 px-6 rounded-full transition-all hover:bg-gray-100 dark:hover:bg-gray-800" data-category="technical">
+                    Technical Services
+                </button>
+                <button class="service-tab-btn bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 font-medium py-2 px-6 rounded-full transition-all hover:bg-gray-100 dark:hover:bg-gray-800" data-category="specialized">
+                    Specialized Solutions
+                </button>
+            </div>
+            
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card relative bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-all duration-500 h-[400px]" data-category="design">
+                    <div class="service-card-front p-8 flex flex-col h-full">
+                        <div class="bg-primary/10 dark:bg-primary/20 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-paint-brush text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Custom Design & Development</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Visually striking, conversion-first websites — no templates, just results.</p>
+                        <div class="mt-auto text-primary font-medium flex items-center">
+                            <span>Learn more</span>
+                            <i class="fas fa-arrow-right ml-2 transition-transform"></i>
+                        </div>
+                    </div>
+                    <div class="service-card-back absolute inset-0 p-8 flex flex-col bg-primary text-white">
+                        <h3 class="text-xl font-bold mb-4">Custom Design & Development</h3>
+                        <p class="mb-4">Every pixel matters in creating a unique digital experience that converts visitors into customers.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Unique, brand-aligned visual identity</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Conversion-optimized user flows</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Mobile-first responsive design</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Performance-focused development</span>
+                            </li>
+                        </ul>
+                        <div class="mt-auto">
+                            <a href="#contact" class="inline-block bg-white text-primary font-medium py-2 px-4 rounded-lg hover:bg-gray-100 transition-colors">Get in touch</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card relative bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-all duration-500 h-[400px]" data-category="technical">
+                    <div class="service-card-front p-8 flex flex-col h-full">
+                        <div class="bg-secondary/10 dark:bg-secondary/20 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-code text-secondary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Frontend Architecture</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Clean, scalable, component-based structures using HTML, TailwindCSS & JavaScript.</p>
+                        <div class="mt-auto text-secondary font-medium flex items-center">
+                            <span>Learn more</span>
+                            <i class="fas fa-arrow-right ml-2 transition-transform"></i>
+                        </div>
+                    </div>
+                    <div class="service-card-back absolute inset-0 p-8 flex flex-col bg-secondary text-white">
+                        <h3 class="text-xl font-bold mb-4">Frontend Architecture</h3>
+                        <p class="mb-4">Building robust, maintainable, and scalable frontend systems that stand the test of time.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Component-based architecture</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>TailwindCSS for consistent styling</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Modern JavaScript practices</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Code organization & documentation</span>
+                            </li>
+                        </ul>
+                        <div class="mt-auto">
+                            <a href="#contact" class="inline-block bg-white text-secondary font-medium py-2 px-4 rounded-lg hover:bg-gray-100 transition-colors">Get in touch</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card relative bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-all duration-500 h-[400px]" data-category="design">
+                    <div class="service-card-front p-8 flex flex-col h-full">
+                        <div class="bg-accent/10 dark:bg-accent/20 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-sync-alt text-accent text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Website Redesign & Revamp</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Full visual + performance makeover of outdated or underperforming websites.</p>
+                        <div class="mt-auto text-accent font-medium flex items-center">
+                            <span>Learn more</span>
+                            <i class="fas fa-arrow-right ml-2 transition-transform"></i>
+                        </div>
+                    </div>
+                    <div class="service-card-back absolute inset-0 p-8 flex flex-col bg-accent text-white">
+                        <h3 class="text-xl font-bold mb-4">Website Redesign & Revamp</h3>
+                        <p class="mb-4">Breathe new life into your digital presence with a complete transformation.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>UX audit & improvement strategy</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Modern visual refresh</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Performance optimization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Content restructuring</span>
+                            </li>
+                        </ul>
+                        <div class="mt-auto">
+                            <a href="#contact" class="inline-block bg-white text-accent font-medium py-2 px-4 rounded-lg hover:bg-gray-100 transition-colors">Get in touch</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card relative bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-all duration-500 h-[400px]" data-category="specialized">
+                    <div class="service-card-front p-8 flex flex-col h-full">
+                        <div class="bg-purple-500/10 dark:bg-purple-500/20 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-shopping-cart text-purple-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">E-Commerce Frontend</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Sleek online stores with UX that drives purchases, not bounces.</p>
+                        <div class="mt-auto text-purple-500 font-medium flex items-center">
+                            <span>Learn more</span>
+                            <i class="fas fa-arrow-right ml-2 transition-transform"></i>
+                        </div>
+                    </div>
+                    <div class="service-card-back absolute inset-0 p-8 flex flex-col bg-purple-500 text-white">
+                        <h3 class="text-xl font-bold mb-4">E-Commerce Frontend</h3>
+                        <p class="mb-4">Create shopping experiences that convert browsers into buyers.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Intuitive product navigation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Streamlined checkout process</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Mobile shopping optimization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Product showcase enhancements</span>
+                            </li>
+                        </ul>
+                        <div class="mt-auto">
+                            <a href="#contact" class="inline-block bg-white text-purple-500 font-medium py-2 px-4 rounded-lg hover:bg-gray-100 transition-colors">Get in touch</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card relative bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-all duration-500 h-[400px]" data-category="technical">
+                    <div class="service-card-front p-8 flex flex-col h-full">
+                        <div class="bg-green-500/10 dark:bg-green-500/20 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-search text-green-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">SEO-Friendly Builds</h3>
+                        <p class="text-gray-600 dark:text-gray-400">On-page SEO, structured data, lightning-fast loads, schema integration.</p>
+                        <div class="mt-auto text-green-500 font-medium flex items-center">
+                            <span>Learn more</span>
+                            <i class="fas fa-arrow-right ml-2 transition-transform"></i>
+                        </div>
+                    </div>
+                    <div class="service-card-back absolute inset-0 p-8 flex flex-col bg-green-500 text-white">
+                        <h3 class="text-xl font-bold mb-4">SEO-Friendly Builds</h3>
+                        <p class="mb-4">Websites built from the ground up with search engines in mind.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Semantic HTML structure</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Schema markup implementation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Performance optimization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Mobile-first indexing readiness</span>
+                            </li>
+                        </ul>
+                        <div class="mt-auto">
+                            <a href="#contact" class="inline-block bg-white text-green-500 font-medium py-2 px-4 rounded-lg hover:bg-gray-100 transition-colors">Get in touch</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card relative bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-all duration-500 h-[400px]" data-category="specialized">
+                    <div class="service-card-front p-8 flex flex-col h-full">
+                        <div class="bg-pink-500/10 dark:bg-pink-500/20 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-universal-access text-pink-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Accessibility First</h3>
+                        <p class="text-gray-600 dark:text-gray-400">WCAG-compliant websites that work for everyone, everywhere.</p>
+                        <div class="mt-auto text-pink-500 font-medium flex items-center">
+                            <span>Learn more</span>
+                            <i class="fas fa-arrow-right ml-2 transition-transform"></i>
+                        </div>
+                    </div>
+                    <div class="service-card-back absolute inset-0 p-8 flex flex-col bg-pink-500 text-white">
+                        <h3 class="text-xl font-bold mb-4">Accessibility First</h3>
+                        <p class="mb-4">Creating inclusive digital experiences that everyone can use.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>WCAG 2.1 AA compliance</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Screen reader compatibility</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Keyboard navigation support</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Color contrast optimization</span>
+                            </li>
+                        </ul>
+                        <div class="mt-auto">
+                            <a href="#contact" class="inline-block bg-white text-pink-500 font-medium py-2 px-4 rounded-lg hover:bg-gray-100 transition-colors">Get in touch</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 7 -->
+                <div class="service-card relative bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-all duration-500 h-[400px]" data-category="specialized">
+                    <div class="service-card-front p-8 flex flex-col h-full">
+                        <div class="bg-indigo-500/10 dark:bg-indigo-500/20 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-magic text-indigo-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Web Animation & Interactivity</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Jaw-dropping transitions, scroll effects, interactive UI without bloat.</p>
+                        <div class="mt-auto text-indigo-500 font-medium flex items-center">
+                            <span>Learn more</span>
+                            <i class="fas fa-arrow-right ml-2 transition-transform"></i>
+                        </div>
+                    </div>
+                    <div class="service-card-back absolute inset-0 p-8 flex flex-col bg-indigo-500 text-white">
+                        <h3 class="text-xl font-bold mb-4">Web Animation & Interactivity</h3>
+                        <p class="mb-4">Elevate user engagement with thoughtful animations and interactions.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Scroll-triggered animations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Micro-interactions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Page transitions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Performance-optimized effects</span>
+                            </li>
+                        </ul>
+                        <div class="mt-auto">
+                            <a href="#contact" class="inline-block bg-white text-indigo-500 font-medium py-2 px-4 rounded-lg hover:bg-gray-100 transition-colors">Get in touch</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 8 -->
+                <div class="service-card relative bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-all duration-500 h-[400px]" data-category="technical">
+                    <div class="service-card-front p-8 flex flex-col h-full">
+                        <div class="bg-red-500/10 dark:bg-red-500/20 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-tools text-red-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Ongoing Support & Refactoring</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Cleanups, upgrades, and post-launch care you can rely on.</p>
+                        <div class="mt-auto text-red-500 font-medium flex items-center">
+                            <span>Learn more</span>
+                            <i class="fas fa-arrow-right ml-2 transition-transform"></i>
+                        </div>
+                    </div>
+                    <div class="service-card-back absolute inset-0 p-8 flex flex-col bg-red-500 text-white">
+                        <h3 class="text-xl font-bold mb-4">Ongoing Support & Refactoring</h3>
+                        <p class="mb-4">Keep your website running smoothly with continuous improvements.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Regular maintenance</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Code refactoring & optimization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Security updates</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Performance monitoring</span>
+                            </li>
+                        </ul>
+                        <div class="mt-auto">
+                            <a href="#contact" class="inline-block bg-white text-red-500 font-medium py-2 px-4 rounded-lg hover:bg-gray-100 transition-colors">Get in touch</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 9 -->
+                <div class="service-card relative bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-all duration-500 h-[400px]" data-category="technical">
+                    <div class="service-card-front p-8 flex flex-col h-full">
+                        <div class="bg-teal-500/10 dark:bg-teal-500/20 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-server text-teal-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">CMS & Hosting Mastery</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Seamless WordPress, Webflow, Wix handling + cPanel & hosting setups.</p>
+                        <div class="mt-auto text-teal-500 font-medium flex items-center">
+                            <span>Learn more</span>
+                            <i class="fas fa-arrow-right ml-2 transition-transform"></i>
+                        </div>
+                    </div>
+                    <div class="service-card-back absolute inset-0 p-8 flex flex-col bg-teal-500 text-white">
+                        <h3 class="text-xl font-bold mb-4">CMS & Hosting Mastery</h3>
+                        <p class="mb-4">Expert handling of content management systems and hosting solutions.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>WordPress customization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Webflow & Wix development</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Hosting setup & optimization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2"></i>
+                                <span>Domain & DNS management</span>
+                            </li>
+                        </ul>
+                        <div class="mt-auto">
+                            <a href="#contact" class="inline-block bg-white text-teal-500 font-medium py-2 px-4 rounded-lg hover:bg-gray-100 transition-colors">Get in touch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Services CTA -->
+            <div class="text-center mt-12">
+                <a href="#contact" class="bg-primary hover:bg-primary/90 text-white font-medium py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-md hover:shadow-lg inline-flex items-center">
+                    <span>Get a Custom Quote</span>
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white dark:bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">
+                <span class="text-primary">My</span> Skills
+            </h2>
+            <p class="text-gray-600 dark:text-gray-400 text-center max-w-2xl mx-auto mb-16">
+                A comprehensive overview of my technical expertise and professional toolkit.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Frontend Skills -->
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-primary/10 dark:bg-primary/20 p-3 rounded-full mr-4">
+                            <i class="fas fa-code text-primary text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Frontend</h3>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <!-- HTML -->
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">HTML5</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill-primary html5-progress"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- CSS/Tailwind -->
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">CSS3 / TailwindCSS</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill-primary css-progress"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- JavaScript -->
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">JavaScript</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill-primary js-progress"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Responsive Design -->
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Responsive Design</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill-primary html5-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Backend Skills -->
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-secondary/10 dark:bg-secondary/20 p-3 rounded-full mr-4">
+                            <i class="fas fa-database text-secondary text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Backend</h3>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <!-- PHP -->
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">PHP</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill-secondary php-progress"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- MySQL -->
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">MySQL</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill-secondary mysql-progress"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Python -->
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Python</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill-secondary python-progress"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- API Development -->
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">API Development</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-progress-bar">
+                                <div class="skill-progress-fill-secondary php-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tools & Technologies -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold text-center mb-8">Tools & Technologies</h3>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <div class="skill-icon-container">
+                        <div class="bg-white dark:bg-gray-800 w-20 h-20 rounded-xl shadow-md flex items-center justify-center hover:shadow-lg transition-all transform hover:-translate-y-1">
+                            <i class="fab fa-git-alt text-3xl text-[#F05032]"></i>
+                        </div>
+                        <span class="mt-2 text-sm text-center block">Git</span>
+                    </div>
+                    <div class="skill-icon-container">
+                        <div class="bg-white dark:bg-gray-800 w-20 h-20 rounded-xl shadow-md flex items-center justify-center hover:shadow-lg transition-all transform hover:-translate-y-1">
+                            <i class="fab fa-docker text-3xl text-[#2496ED]"></i>
+                        </div>
+                        <span class="mt-2 text-sm text-center block">Docker</span>
+                    </div>
+                    <div class="skill-icon-container">
+                        <div class="bg-white dark:bg-gray-800 w-20 h-20 rounded-xl shadow-md flex items-center justify-center hover:shadow-lg transition-all transform hover:-translate-y-1">
+                            <i class="fab fa-npm text-3xl text-[#CB3837]"></i>
+                        </div>
+                        <span class="mt-2 text-sm text-center block">npm</span>
+                    </div>
+                    <div class="skill-icon-container">
+                        <div class="bg-white dark:bg-gray-800 w-20 h-20 rounded-xl shadow-md flex items-center justify-center hover:shadow-lg transition-all transform hover:-translate-y-1">
+                            <i class="fas fa-terminal text-3xl text-gray-700 dark:text-gray-300"></i>
+                        </div>
+                        <span class="mt-2 text-sm text-center block">CLI</span>
+                    </div>
+                    <div class="skill-icon-container">
+                        <div class="bg-white dark:bg-gray-800 w-20 h-20 rounded-xl shadow-md flex items-center justify-center hover:shadow-lg transition-all transform hover:-translate-y-1">
+                            <i class="fas fa-code-branch text-3xl text-[#6E5494]"></i>
+                        </div>
+                        <span class="mt-2 text-sm text-center block">Version Control</span>
+                    </div>
+                    <div class="skill-icon-container">
+                        <div class="bg-white dark:bg-gray-800 w-20 h-20 rounded-xl shadow-md flex items-center justify-center hover:shadow-lg transition-all transform hover:-translate-y-1">
+                            <i class="fas fa-server text-3xl text-[#4479A1]"></i>
+                        </div>
+                        <span class="mt-2 text-sm text-center block">Hosting</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Global Market Focus Section -->
+    <section id="market-focus" class="py-20 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">
+                <span class="text-primary">Global</span> Market Focus
+            </h2>
+            <p class="text-gray-600 dark:text-gray-400 text-center max-w-2xl mx-auto mb-12">
+                Delivering solutions aligned with trending frontend development needs across international markets.
+            </p>
+            
+            <!-- Geographic Markets -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-bold text-center mb-8">Geographic Expertise</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
+                    <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1">
+                        <div class="flag-container mb-3">
+                            <img src="https://flagcdn.com/ae.svg" alt="UAE Flag" class="h-8 inline-block shadow-sm rounded">
+                        </div>
+                        <h4 class="font-bold mb-1">UAE</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Dubai & Abu Dhabi tech hubs</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1">
+                        <div class="flag-container mb-3">
+                            <img src="https://flagcdn.com/us.svg" alt="USA Flag" class="h-8 inline-block shadow-sm rounded">
+                        </div>
+                        <h4 class="font-bold mb-1">United States</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Silicon Valley & East Coast</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1">
+                        <div class="flag-container mb-3">
+                            <img src="https://flagcdn.com/gb.svg" alt="UK Flag" class="h-8 inline-block shadow-sm rounded">
+                        </div>
+                        <h4 class="font-bold mb-1">United Kingdom</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">London & Manchester</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1">
+                        <div class="flag-container mb-3">
+                            <img src="https://flagcdn.com/za.svg" alt="South Africa Flag" class="h-8 inline-block shadow-sm rounded">
+                        </div>
+                        <h4 class="font-bold mb-1">South Africa</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Cape Town & Johannesburg</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1">
+                        <div class="flag-container mb-3">
+                            <img src="https://flagcdn.com/se.svg" alt="Sweden Flag" class="h-8 inline-block shadow-sm rounded">
+                        </div>
+                        <h4 class="font-bold mb-1">Sweden</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Stockholm tech ecosystem</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1">
+                        <div class="flag-container mb-3">
+                            <img src="https://flagcdn.com/sa.svg" alt="Saudi Arabia Flag" class="h-8 inline-block shadow-sm rounded mr-1">
+                            <img src="https://flagcdn.com/qa.svg" alt="Qatar Flag" class="h-8 inline-block shadow-sm rounded ml-1">
+                        </div>
+                        <h4 class="font-bold mb-1">Arab Countries</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Saudi Arabia, Qatar & more</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1">
+                        <div class="flag-container mb-3">
+                            <img src="https://flagcdn.com/ng.svg" alt="Nigeria Flag" class="h-8 inline-block shadow-sm rounded">
+                        </div>
+                        <h4 class="font-bold mb-1">Nigeria</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Lagos & Abuja tech scenes</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1">
+                        <div class="flag-container mb-3">
+                            <img src="https://flagcdn.com/w320/un.png" alt="Global" class="h-8 inline-block shadow-sm rounded">
+                        </div>
+                        <h4 class="font-bold mb-1">Global</h4>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">Remote-first collaboration</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Industry Focus -->
+            <div>
+                <h3 class="text-2xl font-bold text-center mb-8">Industry Specializations</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-primary/10 p-3 rounded-full mr-4">
+                                <i class="fas fa-shopping-cart text-primary text-xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold">E-Commerce</h4>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-400">Building responsive, conversion-optimized storefronts with seamless checkout experiences and robust product management.</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-primary/10 p-3 rounded-full mr-4">
+                                <i class="fas fa-rocket text-primary text-xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold">Tech Startups</h4>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-400">Developing scalable MVPs and growth-ready platforms with modern tech stacks that support rapid iteration and user acquisition.</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-primary/10 p-3 rounded-full mr-4">
+                                <i class="fas fa-chart-line text-primary text-xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold">Finance</h4>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-400">Creating secure, compliant financial interfaces with data visualization and real-time analytics for banking and fintech applications.</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-primary/10 p-3 rounded-full mr-4">
+                                <i class="fas fa-heartbeat text-primary text-xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold">Healthcare</h4>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-400">Developing accessible, HIPAA-compliant interfaces for patient management, telemedicine, and health information systems.</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-primary/10 p-3 rounded-full mr-4">
+                                <i class="fas fa-hands-helping text-primary text-xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold">NGOs</h4>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-400">Building mission-focused platforms with donation systems, volunteer management, and impact reporting for non-profit organizations.</p>
+                    </div>
+                    <div class="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-lg transition-all">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-primary/10 p-3 rounded-full mr-4">
+                                <i class="fas fa-oil-can text-primary text-xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold">Oil & Gas</h4>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-400">Developing industrial interfaces for monitoring, reporting, and operational management in the energy sector with high reliability standards.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Timeline Section -->
+    <section id="timeline" class="py-20 bg-white dark:bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">
+                <span class="text-primary">My</span> Journey
+            </h2>
+            <p class="text-gray-600 dark:text-gray-400 text-center max-w-2xl mx-auto mb-16">
+                A timeline of my learning path and key projects throughout my development career.
+            </p>
+            
+            <!-- Horizontal Timeline -->
+            <div class="relative">
+                <!-- Timeline Track -->
+                <div class="absolute h-1 bg-gray-200 dark:bg-gray-700 top-1/2 transform -translate-y-1/2 left-0 right-0 z-0"></div>
+                
+                <!-- Timeline Container with Horizontal Scroll -->
+                <div class="relative z-10 pb-8 overflow-x-auto">
+                    <div class="inline-flex space-x-24 px-8 min-w-max">
+                        <!-- Timeline Item 1 -->
+                        <div class="relative flex flex-col items-center">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mb-4 z-10">
+                                <i class="fas fa-graduation-cap text-white text-sm"></i>
+                            </div>
+                            <div class="absolute top-4 h-1 w-full bg-primary"></div>
+                            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg max-w-xs">
+                                <div class="text-primary font-bold mb-2">2019</div>
+                                <h3 class="text-lg font-bold mb-2">Started Web Development</h3>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm">Began learning HTML, CSS, and JavaScript fundamentals through online courses and tutorials.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Timeline Item 2 -->
+                        <div class="relative flex flex-col items-center">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mb-4 z-10">
+                                <i class="fas fa-briefcase text-white text-sm"></i>
+                            </div>
+                            <div class="absolute top-4 h-1 w-full bg-primary"></div>
+                            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg max-w-xs">
+                                <div class="text-primary font-bold mb-2">2020</div>
+                                <h3 class="text-lg font-bold mb-2">First Freelance Project</h3>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm">Completed my first paid project, a responsive website for a local business using HTML, CSS, and JavaScript.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Timeline Item 3 -->
+                        <div class="relative flex flex-col items-center">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mb-4 z-10">
+                                <i class="fas fa-code text-white text-sm"></i>
+                            </div>
+                            <div class="absolute top-4 h-1 w-full bg-primary"></div>
+                            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg max-w-xs">
+                                <div class="text-primary font-bold mb-2">2021</div>
+                                <h3 class="text-lg font-bold mb-2">Backend Development</h3>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm">Expanded my skills to include PHP and MySQL, enabling me to build full-stack applications with dynamic content.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Timeline Item 4 -->
+                        <div class="relative flex flex-col items-center">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mb-4 z-10">
+                                <i class="fas fa-trophy text-white text-sm"></i>
+                            </div>
+                            <div class="absolute top-4 h-1 w-full bg-primary"></div>
+                            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg max-w-xs">
+                                <div class="text-primary font-bold mb-2">2022</div>
+                                <h3 class="text-lg font-bold mb-2">E-commerce Platform</h3>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm">Developed a complete e-commerce solution with secure payment processing and inventory management.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Timeline Item 5 -->
+                        <div class="relative flex flex-col items-center">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mb-4 z-10">
+                                <i class="fas fa-chart-line text-white text-sm"></i>
+                            </div>
+                            <div class="absolute top-4 h-1 w-full bg-primary"></div>
+                            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg max-w-xs">
+                                <div class="text-primary font-bold mb-2">2023</div>
+                                <h3 class="text-lg font-bold mb-2">Digital Skills Mentorship</h3>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm">Tutored and mentored over 625 young people in web development and digital skills, helped NGOs optimize their online presence through SEO, and secured my first international client.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Timeline Item 6 -->
+                        <div class="relative flex flex-col items-center">
+                            <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mb-4 z-10">
+                                <i class="fas fa-rocket text-white text-sm"></i>
+                            </div>
+                            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg max-w-xs">
+                                <div class="text-primary font-bold mb-2">2024</div>
+                                <h3 class="text-lg font-bold mb-2">Present & Future</h3>
+                                <p class="text-gray-600 dark:text-gray-400 text-sm">Currently working on expanding my knowledge of modern JavaScript frameworks and exploring AI integration in web applications. Actively seeking more opportunities to practice, learn, and grow as a developer in challenging and collaborative environments.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Scroll Indicators -->
+                <div class="flex justify-between mt-4">
+                    <button id="scroll-left" class="bg-white dark:bg-gray-800 p-2 rounded-full shadow-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" title="Scroll left">
+                        <i class="fas fa-arrow-left text-gray-600 dark:text-gray-400"></i>
+                        <span class="sr-only">Scroll left</span>
+                    </button>
+                    <button id="scroll-right" class="bg-white dark:bg-gray-800 p-2 rounded-full shadow-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" title="Scroll right">
+                        <i class="fas fa-arrow-right text-gray-600 dark:text-gray-400"></i>
+                        <span class="sr-only">Scroll right</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-50 dark:bg-gray-800 overflow-hidden">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">
+                <span class="text-primary">Client</span> Testimonials
+            </h2>
+            <p class="text-gray-600 dark:text-gray-400 text-center max-w-2xl mx-auto mb-8">
+                What people say about working with me and my development process.
+            </p>
+            
+            <div class="relative max-w-5xl mx-auto">
+                <!-- Testimonial Slider Controls -->
+                <div class="flex justify-between absolute top-1/2 left-0 right-0 transform -translate-y-1/2 z-10 px-3">
+                    <button class="testimonial-prev bg-white dark:bg-gray-700 w-10 h-10 rounded-full shadow-lg flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-primary transition-transform hover:scale-110" aria-label="Previous testimonial">
+                        <i class="fas fa-chevron-left text-primary"></i>
+                    </button>
+                    <button class="testimonial-next bg-white dark:bg-gray-700 w-10 h-10 rounded-full shadow-lg flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-primary transition-transform hover:scale-110" aria-label="Next testimonial">
+                        <i class="fas fa-chevron-right text-primary"></i>
+                    </button>
+                </div>
+                
+                <!-- Testimonial Slider -->
+                <div class="testimonial-slider overflow-hidden rounded-xl">
+                    <div class="testimonial-slider-container flex transition-transform duration-500 ease-in-out">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-slide min-w-full bg-white dark:bg-gray-900 rounded-xl p-8 shadow-lg" aria-hidden="false">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6 italic">
+                        "I had the pleasure of working with Habib Oluwafemi on the design and optimization of my website, and I couldn't be more impressed with the results. From the very beginning, they demonstrated a deep understanding of both SEO strategy and web design, creating a site that is not only visually stunning but also highly functional and optimized for search engines. If you're looking for someone who knows how to blend beautiful design with powerful SEO, I highly recommend Habib."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="images/CEO Ashshifa.jpg" alt="Asshifa" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold">CEO Asshifa</h4>
+                            <p class="text-gray-500 dark:text-gray-400 text-sm">Client • Apr 17, 2025</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-slide min-w-full bg-white dark:bg-gray-900 rounded-xl p-8 shadow-lg" aria-hidden="true">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6 italic">
+                        "Habib volunteered as our web developer and admin lead at ANAYD, completely revamping our website in just 6 weeks. The transformation was remarkable - from an outdated platform to a modern, responsive site that perfectly represents our mission. His technical expertise, attention to detail, and commitment to our NGO's vision made all the difference. If you're looking for a developer who can deliver exceptional results with both technical excellence and creative vision, I wholeheartedly recommend Habib."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="images/Aaron.jpg" alt="Aron Sunday" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold">Aron Sunday</h4>
+                            <p class="text-gray-500 dark:text-gray-400 text-sm">Executive Director, ANAYD</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-slide min-w-full bg-white dark:bg-gray-900 rounded-xl p-8 shadow-lg" aria-hidden="true">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6 italic">
+                        "Habib developed an exceptional school management app that has completely transformed how we operate at KDJ International School. The system brilliantly handles student records, attendance tracking, grade management, and parent communication in one intuitive interface. What impressed me most was how he took time to understand our unique administrative challenges and designed custom features to address them. The app has reduced our administrative workload by 70% and improved parent satisfaction significantly. His technical expertise combined with his understanding of educational institutions made this project an outstanding success."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Dr. Kabir Johnson" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold">Founder & Director</h4>
+                            <p class="text-gray-500 dark:text-gray-400 text-sm">KDJ International School</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 - Avril by WK -->
+                <div class="testimonial-slide min-w-full bg-white dark:bg-gray-900 rounded-xl p-8 shadow-lg" aria-hidden="true">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-400 mb-6 italic">
+                        "Working with Habib on our e-commerce website was a game-changer for our African fashion brand. He created a stunning online store that perfectly captures the vibrant essence of our designs while providing a seamless shopping experience. The website's SEO optimization has significantly increased our organic traffic, and the mobile responsiveness ensures our customers can shop effortlessly from any device. His understanding of both technical requirements and aesthetic design helped us showcase our products beautifully while driving sales. Since launching the new site, our online conversion rate has increased by 65% and our international customer base has expanded tremendously."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="images/Avril by WK.jpg" alt="Winyk" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold">Creative Director</h4>
+                            <p class="text-gray-500 dark:text-gray-400 text-sm">Avril by WK, African Fashion</p>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial Dots Navigation -->
+                <div class="testimonial-dots flex justify-center space-x-2 mt-6"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white dark:bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">
+                <span class="text-primary">Get In</span> Touch
+            </h2>
+            <p class="text-gray-600 dark:text-gray-400 text-center max-w-2xl mx-auto mb-16">
+                Have a project in mind or want to discuss a potential collaboration? Feel free to reach out!
+            </p>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 shadow-lg">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" class="w-full px-4 py-3 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white font-medium py-3 px-6 rounded-lg transition-all transform hover:scale-105 shadow-md hover:shadow-lg flex items-center justify-center">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-primary/10 dark:bg-primary/20 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Email</h4>
+                                    <a href="mailto:habeeboluwafemi27@gmail.com" class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">habeeboluwafemi27@gmail.com</a><br>
+                                    <a href="mailto:Najeebhabeeb27@fmail.com" class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors">Najeebhabeeb27@fmail.com</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-primary/10 dark:bg-primary/20 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Location</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">Lagos, Nigeria</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-primary/10 dark:bg-primary/20 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium mb-1">Phone</h4>
+                                    <p class="text-gray-600 dark:text-gray-400">+234 813 101 7099</p>
+                                    <p class="text-gray-600 dark:text-gray-400">+234 906 582 1064</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Call-to-Action Buttons -->
+                    <div class="mt-8 mb-8">
+                        <div class="flex flex-wrap gap-4">
+                            <a href="#contact" class="inline-flex items-center justify-center bg-gray-800 dark:bg-gray-700 hover:bg-primary text-white font-medium py-3 px-6 rounded-full transition-all transform hover:scale-105 shadow-md hover:shadow-lg">
+                                <i class="fas fa-envelope mr-2"></i> Contact Me
+                            </a>
+                            <a href="https://contra.com/habeeb_oluwafemi_732wf126" target="_blank" rel="noopener" class="inline-flex items-center justify-center bg-[#FF5757] hover:bg-[#FF3A3A] text-white font-medium py-3 px-6 rounded-full transition-all transform hover:scale-105 shadow-md hover:shadow-lg">
+                                <i class="fas fa-briefcase mr-2"></i> Hire Me on Contra
+                            </a>
+                            <a href="https://calendly.com/habeeboluwafemi" target="_blank" rel="noopener" class="inline-flex items-center justify-center bg-[#0066FF] hover:bg-[#0052CC] text-white font-medium py-3 px-6 rounded-full transition-all transform hover:scale-105 shadow-md hover:shadow-lg">
+                                <i class="fas fa-calendar-alt mr-2"></i> Book a Call
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Media Links -->
+                    <div class="mt-12">
+                        <h3 class="text-2xl font-bold mb-6">Follow Me</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/OlafemTech" target="_blank" rel="noopener" class="bg-gray-200 dark:bg-gray-700 hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white text-gray-700 dark:text-gray-300 p-3 rounded-full transition-colors" title="GitHub Profile">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/habeeb-oluwafemi-0b1999bb/" target="_blank" rel="noopener" class="bg-gray-200 dark:bg-gray-700 hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white text-gray-700 dark:text-gray-300 p-3 rounded-full transition-colors" title="LinkedIn Profile">
+                                <i class="fab fa-linkedin-in text-xl"></i>
+                            </a>
+                            <a href="https://x.com/femi_ultim8" target="_blank" rel="noopener" class="bg-gray-200 dark:bg-gray-700 hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white text-gray-700 dark:text-gray-300 p-3 rounded-full transition-colors" title="Twitter Profile">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                            <a href="https://www.instagram.com/habeeb_femi_/" target="_blank" rel="noopener" class="bg-gray-200 dark:bg-gray-700 hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white text-gray-700 dark:text-gray-300 p-3 rounded-full transition-colors" title="Instagram Profile">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 dark:bg-black text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="text-2xl font-bold">
+                        <span class="text-white">&lt;</span>
+                        <span class="text-primary">Habeeb Oluwafemi</span>
+                        <span class="text-white">/&gt;</span>
+                    </a>
+                </div>
+                <div class="flex flex-wrap justify-center space-x-6">
+                    <a href="#home" class="hover:text-primary transition-colors mb-2">Home</a>
+                    <a href="#about" class="hover:text-primary transition-colors mb-2">About</a>
+                    <a href="#projects" class="hover:text-primary transition-colors mb-2">Projects</a>
+                    <a href="#skills" class="hover:text-primary transition-colors mb-2">Skills</a>
+                    <a href="#timeline" class="hover:text-primary transition-colors mb-2">Timeline</a>
+                    <a href="#testimonials" class="hover:text-primary transition-colors mb-2">Testimonials</a>
+                    <a href="#contact" class="hover:text-primary transition-colors mb-2">Contact</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">&copy; 2025 Habeeb Oluwafemi. All rights reserved.</p>
+                <p class="text-gray-400 text-sm mt-4 md:mt-0">Designed & Built with <i class="fas fa-heart text-red-500"></i></p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="fixed bottom-6 right-6 bg-primary hover:bg-primary/90 text-white p-3 rounded-full shadow-lg transition-all transform hover:scale-110 opacity-0 invisible z-50" title="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+        <span class="sr-only">Scroll to top</span>
+    </button>
+    
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="fixed inset-0 bg-black/70 flex items-center justify-center z-50 opacity-0 invisible transition-all duration-300">
+        <div class="bg-white dark:bg-gray-900 rounded-xl w-full max-w-4xl max-h-[90vh] overflow-y-auto mx-4">
+            <div class="sticky top-0 bg-white dark:bg-gray-900 p-6 border-b border-gray-200 dark:border-gray-700 flex justify-between items-center">
+                <h3 id="modal-title" class="text-2xl font-bold">Project Details</h3>
+                <button id="close-modal" class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200" title="Close modal">
+                    <i class="fas fa-times text-xl"></i>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <div class="p-6">
+                <div id="modal-content" class="space-y-6">
+                    <!-- Content will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/testimonial-slider.js"></script>
+    <script src="js/contact-form.js"></script>
+</body>
+</html>

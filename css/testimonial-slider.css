@@ -1,0 +1,109 @@
+/* Testimonial Slider Styles */
+.testimonial-slider {
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-slider-container {
+    will-change: transform;
+}
+
+.testimonial-slide {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    padding: 2.5rem;
+}
+
+.testimonial-prev,
+.testimonial-next {
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.testimonial-prev:hover,
+.testimonial-next:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.testimonial-prev:focus,
+.testimonial-next:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+.testimonial-dots {
+    margin-top: 1.5rem;
+}
+
+.testimonial-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #CBD5E0;
+    border: none;
+    padding: 0;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.testimonial-dot.active {
+    background-color: #4299E1;
+    transform: scale(1.2);
+}
+
+/* Animation for testimonials */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.testimonial-slide {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Add some depth to the testimonials */
+.testimonial-slide {
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-slide::before {
+    content: '"';
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 120px;
+    color: rgba(66, 153, 225, 0.1);
+    font-family: Georgia, serif;
+    line-height: 1;
+    z-index: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .testimonial-slide {
+        padding: 1.5rem;
+    }
+    
+    .testimonial-prev,
+    .testimonial-next {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Dark mode adjustments */
+.dark .testimonial-dot {
+    background-color: #4A5568;
+}
+
+.dark .testimonial-dot.active {
+    background-color: #4299E1;
+}
+
+.dark .testimonial-slide::before {
+    color: rgba(66, 153, 225, 0.05);
+}
