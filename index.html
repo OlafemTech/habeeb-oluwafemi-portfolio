@@ -83,7 +83,7 @@
                     <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
                 </div>
                 <div class="flex items-center space-x-4">
-                    <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                    <button id="theme-toggle" title="Toggle dark mode" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
                         <i class="fas fa-moon dark:hidden"></i>
                         <i class="fas fa-sun hidden dark:block"></i>
                     </button>
@@ -1324,6 +1324,204 @@
             </div>
         </div>
     </section>
+
+    <!-- Optimization Section -->
+    <section id="optimization" class="py-20 bg-gray-50 dark:bg-gray-900 overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 slide-in-top">
+                <h2 class="text-4xl font-bold mb-4">Website Optimization</h2>
+                <p class="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">This portfolio is built with performance, accessibility, and SEO best practices in mind.</p>
+            </div>
+            
+            <!-- Floating images for visual appeal -->
+            <div class="absolute -left-20 top-40 opacity-20 dark:opacity-10 floating-animation-slow hidden lg:block">
+                <img src="anayd-m-1.png" alt="Decorative image" class="w-64 h-64 object-contain">
+            </div>
+            <div class="absolute -right-20 bottom-40 opacity-20 dark:opacity-10 floating-animation hidden lg:block">
+                <img src="project-m.png" alt="Decorative image" class="w-64 h-64 object-contain">
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto relative z-10">
+                <!-- Accessibility Card -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 transform transition-all hover:scale-105 slide-in-left">
+                    <div class="text-center mb-6">
+                        <div class="relative w-32 h-32 mx-auto mb-4 group">
+                            <img src="what-we-do-1.png" alt="Accessibility illustration" class="w-32 h-32 object-cover rounded-lg absolute inset-0 transition-opacity duration-500 group-hover:opacity-0">
+                            <img src="anayd-2.png" alt="Accessibility illustration alternate" class="w-32 h-32 object-cover rounded-lg absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                        </div>
+                        <h3 class="text-2xl font-bold">Accessibility</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-600 dark:text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Semantic HTML structure</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>ARIA attributes for interactive elements</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Keyboard navigation support</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Sufficient color contrast ratios</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Screen reader compatible</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Performance Card -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 transform transition-all hover:scale-105 slide-in-top animation-delay-200">
+                    <div class="text-center mb-6">
+                        <div class="relative w-32 h-32 mx-auto mb-4 group">
+                            <img src="what-we-do-2.png" alt="Performance illustration" class="w-32 h-32 object-cover rounded-lg absolute inset-0 transition-opacity duration-500 group-hover:opacity-0">
+                            <img src="project-m.png" alt="Performance illustration alternate" class="w-32 h-32 object-cover rounded-lg absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                        </div>
+                        <h3 class="text-2xl font-bold">Performance</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-600 dark:text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Optimized image loading</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Deferred JavaScript execution</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Minimal CSS footprint</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Efficient animations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Fast loading times</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- SEO Card -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 transform transition-all hover:scale-105 slide-in-right animation-delay-400">
+                    <div class="text-center mb-6">
+                        <div class="relative w-32 h-32 mx-auto mb-4 group">
+                            <img src="who-we-are-m.png" alt="SEO illustration" class="w-32 h-32 object-cover rounded-lg absolute inset-0 transition-opacity duration-500 group-hover:opacity-0">
+                            <img src="nyan.png" alt="SEO illustration alternate" class="w-32 h-32 object-cover rounded-lg absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                        </div>
+                        <h3 class="text-2xl font-bold">SEO</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-600 dark:text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Proper meta tags</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Structured data markup</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Optimized headings hierarchy</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Mobile-friendly design</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Fast page load speed</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Lighthouse Results -->
+            <div class="mt-20 slide-in-bottom animation-delay-600">
+                <h3 class="text-3xl font-bold text-center mb-8">Lighthouse Performance Scores</h3>
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 max-w-4xl mx-auto">
+                    <div class="flex flex-col items-center">
+                        <!-- Lighthouse screenshots carousel -->
+                        <div class="relative w-full h-64 md:h-96 mb-6 overflow-hidden rounded-lg">
+                            <div class="carousel-container flex transition-transform duration-500 ease-in-out h-full">
+                                <div class="carousel-slide min-w-full h-full flex items-center justify-center">
+                                    <img src="project-d.png" alt="Google Lighthouse performance scores" class="w-full h-full object-contain">
+                                </div>
+                                <div class="carousel-slide min-w-full h-full flex items-center justify-center">
+                                    <img src="anayd-m-1.png" alt="Additional performance metrics" class="w-full h-full object-contain">
+                                </div>
+                                <div class="carousel-slide min-w-full h-full flex items-center justify-center">
+                                    <img src="project-m.png" alt="Mobile optimization scores" class="w-full h-full object-contain">
+                                </div>
+                            </div>
+                            
+                            <!-- Carousel Navigation -->
+                            <button title="Previous slide" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 dark:bg-gray-800/80 rounded-full p-2 text-gray-800 dark:text-gray-200 hover:bg-white dark:hover:bg-gray-700 focus:outline-none carousel-prev">
+                                <i class="fas fa-chevron-left"></i>
+                                <span class="sr-only">Previous</span>
+                            </button>
+                            <button title="Next slide" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 dark:bg-gray-800/80 rounded-full p-2 text-gray-800 dark:text-gray-200 hover:bg-white dark:hover:bg-gray-700 focus:outline-none carousel-next">
+                                <i class="fas fa-chevron-right"></i>
+                                <span class="sr-only">Next</span>
+                            </button>
+                            
+                            <!-- Carousel Indicators -->
+                            <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
+                                <button title="Go to slide 1" class="w-3 h-3 rounded-full bg-white/60 dark:bg-gray-600/60 carousel-indicator active" data-index="0"></button>
+                                <button title="Go to slide 2" class="w-3 h-3 rounded-full bg-white/60 dark:bg-gray-600/60 carousel-indicator" data-index="1"></button>
+                                <button title="Go to slide 3" class="w-3 h-3 rounded-full bg-white/60 dark:bg-gray-600/60 carousel-indicator" data-index="2"></button>
+                            </div>
+                        </div>
+                        
+                        <!-- Lighthouse Score Indicators -->
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 w-full">
+                            <!-- Performance Score -->
+                            <div class="text-center">
+                                <div class="relative inline-flex items-center justify-center">
+                                    <img src="nyan-1.jpg" alt="Performance score" class="w-24 h-24 rounded-full object-cover">
+                                    <span class="absolute text-2xl font-bold bg-white/80 dark:bg-gray-800/80 rounded-full w-16 h-16 flex items-center justify-center">90%</span>
+                                </div>
+                                <p class="mt-2 font-semibold">Performance</p>
+                            </div>
+                            
+                            <!-- Accessibility Score -->
+                            <div class="text-center">
+                                <div class="relative inline-flex items-center justify-center">
+                                    <img src="nyan-2.jpg" alt="Accessibility score" class="w-24 h-24 rounded-full object-cover">
+                                    <span class="absolute text-2xl font-bold bg-white/80 dark:bg-gray-800/80 rounded-full w-16 h-16 flex items-center justify-center">100%</span>
+                                </div>
+                                <p class="mt-2 font-semibold">Accessibility</p>
+                            </div>
+                            
+                            <!-- Best Practices Score -->
+                            <div class="text-center">
+                                <div class="relative inline-flex items-center justify-center">
+                                    <img src="anayd-1.jpg" alt="Best Practices score" class="w-24 h-24 rounded-full object-cover">
+                                    <span class="absolute text-2xl font-bold bg-white/80 dark:bg-gray-800/80 rounded-full w-16 h-16 flex items-center justify-center">90%</span>
+                                </div>
+                                <p class="mt-2 font-semibold">Best Practices</p>
+                            </div>
+                            
+                            <!-- SEO Score -->
+                            <div class="text-center">
+                                <div class="relative inline-flex items-center justify-center">
+                                    <img src="nyan.png" alt="SEO score" class="w-24 h-24 rounded-full object-cover">
+                                    <span class="absolute text-2xl font-bold bg-white/80 dark:bg-gray-800/80 rounded-full w-16 h-16 flex items-center justify-center">95%</span>
+                                </div>
+                                <p class="mt-2 font-semibold">SEO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
     <!-- Global Market Focus Section -->
     <section id="market-focus" class="py-20 bg-gray-50 dark:bg-gray-800">
@@ -1828,6 +2026,7 @@
                     <a href="#skills" class="hover:text-primary transition-colors mb-2">Skills</a>
                     <a href="#timeline" class="hover:text-primary transition-colors mb-2">Timeline</a>
                     <a href="#testimonials" class="hover:text-primary transition-colors mb-2">Testimonials</a>
+                    <a href="#optimization" class="hover:text-primary transition-colors mb-2">Optimization</a>
                     <a href="#contact" class="hover:text-primary transition-colors mb-2">Contact</a>
                 </div>
             </div>
@@ -1867,5 +2066,6 @@
     <script src="js/main.js" defer></script>
     <script src="js/testimonial-slider.js" defer></script>
     <script src="js/contact-form.js" defer></script>
+    <script src="js/optimization-carousel.js" defer></script>
 </body>
 </html>
